@@ -1,0 +1,24 @@
+<div>
+
+  <h1>Charter Application </h1>
+  <ul *ngFor="let dt of datas">
+<li>Customer: {{dt.id}}</li>
+<li>Transaction in January : {{dt.Jan}}</li>
+<li>Transaction in February : {{dt.Feb}}</li>
+<li>Transaction in March : {{dt.March}}</li>
+
+<div *ngFor="let item of dt.Jan">
+
+Reward for January : {{  calRewardPoint(item)}}
+</div>
+<div *ngFor="let item of dt.Feb">
+
+  Reward for Febuary : {{  calRewardPoint(item)}}
+  </div>
+  <div *ngFor="let item of dt.March">
+
+    Reward for March : {{  calRewardPoint(item)}}
+    </div>
+</ul>
+ 
+</div>
